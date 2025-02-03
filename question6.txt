@@ -1,0 +1,14 @@
+Q6)What are IDs and classes in HTML, and how do they differ?
+
+Ans).IDs are the unique identifiers for a single element on the web page. It ensures that each element having an id is distinct from all others on the page. It’s like giving a specific name to an element. For instance, you might assign an id to a particular section of your webpage that you want to link or apply some property, styling, functionalities.
+On the contrary, the class attribute in HTML serves to identify multiple elements as belonging to a particular group or having a shared style. Think of classes as tags that categorize elements with shared characteristics. For instance, you might use a class to style all buttons on your webpage similarly.
+
+The Difference between them is--
+
+        ID Attribute	                   |                 Class Attribute
+Uniquely identifies one element.	       | Can be applied to multiple elements.
+Primarily used for styling or JavaScript.  | Also used for styling or JavaScript.
+Only one element can have a specific ID.   | Multiple elements can share the same class.
+Written as id="example".	               | Written as class="example".
+Accessed in CSS with #example selector.	   | Accessed in CSS with .example selector.
+Often used for unique page elements.	   | Commonly used for styling groups of elements.
