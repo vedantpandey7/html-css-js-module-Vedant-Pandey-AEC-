@@ -1,0 +1,102 @@
+1).What is the use of float property? Which property is the better alternative to it?
+
+Ans).The float property is used to position the elements to the left or the right of the container while allowing other content to flow around it.
+It is not Commonly used these days.
+The best alternative of this in todays world is the flex-box which is ideal for the on-dimensional layouts. And if we are working in 2-D environment then grid is the alternative which we can use at the place of float.
+
+2).Explain the difference between absolute and relative positions.
+
+Ans).The position property in CSS defines how an element is positioned in a document. The two common values, absolute and relative, behave differently:
+1. Relative Position (position: relative                                                                                                                ;)
+The element is positioned relative to its normal position in the document flow.
+Other elements do not move when a relative element is shifted.
+You can adjust its position using top, right, bottom, and left.
+
+2. Absolute Position (position: absolute                                                                                              ;)
+The element is positioned relative to the nearest positioned ancestor (i.e., an ancestor with relative, absolute, or fixed position).
+If no positioned ancestor exists, it is positioned relative to the <html> (viewport).
+The element is removed from the normal document flow, meaning other elements ignore its space.
+
+Key Differences:
+Relative | Absolute
+Positioned relative to Its normal position.| Positioned relative to Nearest positioned ancestor.
+Moves when scrolled. | Scroll Only if inside a scrollable ancestor.
+Use for slight adjustment without breaking | Used for floating elements,overlays,tooltips.
+layout. |
+Remains in the documents flow. | Removed from the documents flow.
+
+
+
+
+3).What are the different types of CSS Selectors?
+
+
+Ans).So the Selectors are used to style specific elements in HTML.They use to target an html element and the with the help of that various CSS styling is added to it.
+Now there are many type of Selectors like:
+
+Universal Selector).
+Selects all elements in the document.
+Example:
+* { color: red; }
+
+Element Selector).
+Selects elements by their tag name.
+Example:
+p { font-size: 16px; }
+
+Class Selector (.)).
+Selects elements with a specific class attribute.
+and multiple classes on the same element.
+Example:
+.box { background-color: lightblue; }
+
+Id Selector (#)).
+Selects an element with a specific id attribute.
+
+Example:
+#header { font-weight: bold; }
+
+Attribute Selector).
+Selects elements based on the presence or
+value of an attribute.
+Example:
+input[type="text"] { border: 1px solid blue; }
+a[href^="https"] { color: green; }
+
+Combinators).
+Combinators define the relationship between
+two selectors.
+Example:
+div p { color: blue; } [Descendant]
+div > p { color: green; } [Child]
+h2 + p { margin-top: 0; } [Adjacent Sibling]
+h2 ~ p { color: red; } [General Sibling]
+
+Pseudo-classes).
+Pseudo-classes are used to define the special
+state of an element.
+Example:
+button:hover { background-color: gray;}
+a:active { color: red; }
+p:first-child { font-weight: bold; }
+
+Pseudo-elements).
+Pseudo-elements allow you to style the specific
+part of an element.
+Example:
+p::before { content: "Note: "; font-weight:
+bold; }
+p::after { content: " (End)"; font-size: 12px; }
+
+
+
+
+4).How are inline and block elements different from each other?
+
+Ans). The inline and the block elements differ from each othr in various factors,like.
+
+                Block elements                          |           Inline elements
+            Full width of parent.                       |      Only as wide as content.
+            Starts on a new line                        |      Does not start on a new line.
+            Can contain both block and inline elements  |      Can contain only inline elements.
+            Layout structuring.                         |      Styling small parts of text.

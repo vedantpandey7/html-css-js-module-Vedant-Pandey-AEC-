@@ -13,10 +13,10 @@ Some of the semantic elements are--
 <section>
 <aside>
 <footer>
-
 They all defines a page's structure and readbility.
 
 Some of the NON-Semantic elements are--
+
 <div>
 <span>
 <b>
