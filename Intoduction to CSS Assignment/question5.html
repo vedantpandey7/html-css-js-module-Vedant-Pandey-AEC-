@@ -1,4 +1,4 @@
-<!-- 3).Create HTML for web-page https://drive.google.com/drive/folders/1LNOUCAReojt9CUVDR138gneZZVUArLNp. -->
+<!-- 5).Create HTML for web-page https://drive.google.com/drive/folders/1LNOUCAReojt9CUVDR138gneZZVUArLNp. -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -15,37 +15,62 @@
       <div class="logo">
         <img src="ttnlogo1.jpg" alt="TO THE NEW Logo" />
       </div>
+      
     </header>
 
-    <nav class="navbar">
-      <ul class="navbar-menu">
-        <li><a href="#">Home</a></li>
-        <li>
-          <a href="#">Single Posts</a>
+    
+    <button class="hamburger">&#9776;</button> 
+<nav class="navbar">
+    <ul class="navbar-menu">
+        <li><a href="#">Home</a>
           <ul class="dropdown">
             <li><a href="#">Post 1</a></li>
             <li><a href="#">Post 2</a></li>
-          </ul>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+        </ul></li>
+        <li class="has-dropdown">
+            <a href="#">Single Posts▼</a>
+            <ul class="dropdown">
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+                <li><a href="#">Post 1</a></li>
+                <li><a href="#">Post 2</a></li>
+            </ul>
         </li>
-        <li>
-          <a href="#">Pages</a>
-          <ul class="dropdown">
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
+        <li class="has-dropdown">
+            <a href="#">Pages ▼</a>
+            <ul class="dropdown">
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
           </ul>
         </li>
         <li><a href="#">Category</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact Me</a></li>
-        <li>
-          <a href="#">Features</a>
-          <ul class="dropdown">
-            <li><a href="#">Feature 1</a></li>
-            <li><a href="#">Feature 2</a></li>
+        <li class="has-dropdown">
+            <a href="#">Features ▼</a>
+            <ul class="dropdown">
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
+              <li><a href="#">Post 1</a></li>
+              <li><a href="#">Post 2</a></li>
           </ul>
         </li>
-      </ul>
-    </nav>
+    </ul>
+</nav>
+
+    
 
     <section class="banner">
       <img src="nyc-brooklyn-bridge.webp" alt="City Banner" />
@@ -57,59 +82,57 @@
 
     <main>
       <div class="content">
-      
-        <section class="form-section">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde
-            possimus saepe voluptatibus quibusdam a iusto quod est sunt
-            distinctio sint asperiores, nostrum, ut molestias, natus suscipit.
-          </p>
-          <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required />
-
-            <label>Gender:</label>
-            <div class="gender">
-              <input type="radio" id="male" name="gender" value="Male" required />
-              <label for="male">Male</label>
-              
-              <input type="radio" id="female" name="gender" value="Female" required />
-              <label for="female">Female</label>
-            </div>
-
-            <label for="city">City:</label>
-            <select id="city" name="city">
-              <option value="city1">City 1</option>
-              <option value="city2">City 2</option>
-            </select>
-
-            <label>Hobbies:</label>
-            <div class="hobbies">
-              <input type="checkbox" id="reading" name="hobbies[]" value="Reading" />
-              <label for="reading">Reading</label>
-
-              <input type="checkbox" id="writing" name="hobbies[]" value="Writing" />
-              <label for="writing">Writing</label>
-
-              <input type="checkbox" id="music" name="hobbies[]" value="Music" />
-              <label for="music">Music</label>
-
-              <input type="checkbox" id="sports" name="hobbies[]" value="Sports" />
-              <label for="sports">Sports</label>
-            </div>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit" aria-label="Submit Form">Submit Form</button>
-          </form>
-        </section>
+      <div class="form-section ">
+        <form action="#" method="post" id="contact-form">
+         
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required pattern="[^ ]+@[^ ]+\.[a-z]{2,3}" />
+        
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6" />
+        
+          <label>Gender:</label>
+          <div class="gender">
+            <input type="radio" id="male" name="gender" value="Male" required />
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="Female" required />
+            <label for="female">Female</label>
+          </div>
+        
+          <label for="city">City:</label>
+          <select id="city" name="city" required>
+            <option value="">Select a city</option>
+            <option value="city1">City 1</option>
+            <option value="city2">City 2</option>
+          </select>
+        
+          <label>Hobbies:</label>
+          <div class="hobbies">
+            <input type="checkbox" id="reading" name="hobbies[]" value="Reading" required />
+            <label for="reading">Reading</label>
+        
+            <input type="checkbox" id="writing" name="hobbies[]" value="Writing" />
+            <label for="writing">Writing</label>
+        
+            <input type="checkbox" id="music" name="hobbies[]" value="Music" />
+            <label for="music">Music</label>
+        
+            <input type="checkbox" id="sports" name="hobbies[]" value="Sports" />
+            <label for="sports">Sports</label>
+          </div>
+        
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+        
+          <button type="submit" aria-label="Submit Form">Submit Form</button>
+        </form>
+      </div>
+        
+        
 
         <div class="right-sidebar">
           <div class="about-us">
@@ -193,6 +216,69 @@
           
         </div>
       </footer>
+
+
+      <div class="modal" id="popup-modal">
+        <div class="modal-content">
+            <p>Would you like to proceed with the Submit action?</p>
+            <div class="modal-buttons">
+                <button class="btn proceed-btn" id="proceed-btn">Proceed</button>
+                <button class="btn cancel-btn" id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+
+document.addEventListener("DOMContentLoaded", function() {
+  const hamburger = document.querySelector(".hamburger");
+  const navbarMenu = document.querySelector(".navbar-menu");
+  const dropdownItems = document.querySelectorAll(".has-dropdown");
+
+  hamburger.addEventListener("click", function() {
+    navbarMenu.classList.toggle("show"); 
+  });
+
+  dropdownItems.forEach(item => {
+    item.addEventListener("click", function(e) {
+      e.preventDefault();
+      item.classList.toggle("active"); 
+    });
+  });
+});
+
+      document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+    const modal = document.getElementById("popup-modal");
+    const proceedBtn = document.getElementById("proceed-btn");
+    const cancelBtn = document.getElementById("cancel-btn");
+
+    form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        modal.style.display = "flex";
+    });
+
+    proceedBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+        form.submit(); 
+    });
+
+    cancelBtn.addEventListener("click", function () {
+        modal.style.display = "none"; 
+    });
+});
+
+
+
+
+
+
+  </script>
+    
   </body>
 </html>
 

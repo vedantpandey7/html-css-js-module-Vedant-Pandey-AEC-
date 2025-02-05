@@ -1,0 +1,53 @@
+Question: What are data types in Javascript? Explain the different types of data types with examples.
+Solution: In JavaScript, data types refer to the different types of values that can be assigned to variables. JavaScript has both primitive data types and non-primitive data types (also known as reference types).
+
+1. Primitive Data Types
+These are the basic types of data that are immutable (cannot be changed once they are set). When you assign a primitive data type to a variable, you are directly assigning the value.
+
+String: A sequence of characters enclosed in single, double, or backticks (template literals).
+
+let name = "John"; 
+let greeting = 'Hello, World!'; 
+let message = `Hi, ${name}!`; // template literal
+
+Number: Represents both integers and floating-point numbers.
+let age = 25; // integer
+let price = 99.99; // float
+let temperature = -5; // negative number
+
+Boolean: Represents a value of either true or false.
+
+let isActive = true;  // boolean
+let isFinished = false; // boolean
+
+
+Undefined: A variable that has been declared but not assigned a value has the value undefined.
+let score; // undefined
+
+2. Non-Primitive (Reference) Data Types
+
+These types store references to the data rather than the actual value. They are mutable and can be changed.
+
+Object: A collection of key-value pairs where keys are strings and values can be of any type.
+let person = {
+    name: "Alice",
+    age: 30,
+    isActive: true
+}; // object
+
+
+Array: A special type of object used to store ordered collections of data. Arrays can hold any data type.
+let colors = ["red", "green", "blue"]; // array
+let numbers = [1, 2, 3, 4]; // array
+
+Function: A block of code that can be invoked or called to perform a task. Functions are objects in JavaScript.
+function greet() {
+    console.log("Hello!");
+}
+greet(); // function
+
+
+
+
+
+
