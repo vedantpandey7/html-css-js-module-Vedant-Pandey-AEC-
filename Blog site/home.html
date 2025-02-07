@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootcamp Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="ttnlogo1.jpg" alt="logo">
+            Bootcamp Blog</div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="publishedblogs.html">Published Blogs</a></li>
+            </ul>
+        </nav>
+    </header>
+   
+    <section class="carousel">
+        <div class="banner">
+            <button class="prev" onclick="changeSlide(-1)"> &#10094;</button>
+            <img id="carousel-image" src="banner-blogger-woman-hands-typing-600nw-2137810931.webp" alt="Banner 1">
+            <div class="caption" id="carousel-caption">
+                <h2>Banner 1</h2>
+                <p>Read more about this</p>
+            </div>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+        <div class="indicators">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <section class="blog-list">
+        <div class="blog-item">
+            <div class="thumbnail"><img src="speaker-giving-talk-on-corporate-600nw-2508411195.webp" alt="img"></div>
+            <span class="category">Java</span>
+            <h3>Post title</h3>
+            <p class="dis">Jan 23</p>
+            <p class="dis">This is a wider card with supporting text.</p>
+            <a href="Blog.html">Continue reading</a>
+        </div>
+        <div class="blog-item">
+            <div class="thumbnail">Thumbnail</div>
+            <span class="category">AEM</span>
+            <h3>Post title</h3>
+            <p class="dis">May 19</p>
+            <p class="dis">This is a wider card with supporting text.</p>
+            <a href="Blog.html">Continue reading</a>
+        </div>
+        <div class="blog-item">
+            <div class="thumbnail">Thumbnail</div>
+            <span class="category">JS</span>
+            <h3>Post title</h3>
+            <p class="dis">Nov 11</p>
+            <p class="dis">This is a wider card with supporting text.</p>
+            <a href="Blog.html">Continue reading</a>
+        </div>
+        
+    </section>
+    <a href="#top">Back to top</a>
+
+    <footer>
+      
+        <p>HomePage Blogs</p>
+        <p>&copy; 2022 - 2023 TTN Bootcamp. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const images = ["banner-blogger-woman-hands-typing-600nw-2137810931.webp", "istockphoto-1086352374-612x612.jpg", "istockphoto-1133586715-612x612.jpg"];
+        const captions = [
+            { title: "Banner 1", text: "Read more about this" },
+            { title: "Banner 2", text: "Explore the latest trends" },
+            { title: "Banner 3", text: "Stay updated with new insights" }
+        ];
+    
+        function showSlide(n) {
+            let imageElement = document.getElementById("carousel-image");
+            let captionElement = document.getElementById("carousel-caption");
+            let dots = document.querySelectorAll(".dot");
+    
+            slideIndex = (n + images.length) % images.length; 
+    
+            imageElement.src = images[slideIndex];
+            captionElement.innerHTML = `<h2>${captions[slideIndex].title}</h2><p>${captions[slideIndex].text}</p>`;
+    
+            dots.forEach(dot => dot.classList.remove("active"));
+            dots[slideIndex].classList.add("active");
+        }
+    
+        function changeSlide(n) {
+            showSlide(slideIndex + n);
+        }
+    
+        function currentSlide(n) {
+            showSlide(n);
+        }
+
+        showSlide(0);
+    </script>
+    
+</body>
+</html>
