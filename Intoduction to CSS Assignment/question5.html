@@ -6,23 +6,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
-    <meta name="description" content="Contact us for inquiries, collaborations, and support." />
+    <meta
+      name="description"
+      content="Contact us for inquiries, collaborations, and support."
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
+
   <body>
     <header>
       <div class="logo">
         <img src="ttnlogo1.jpg" alt="TO THE NEW Logo" />
+        <button class="hamburger">&#9776;</button>
       </div>
-      
     </header>
 
-    
-    <button class="hamburger">&#9776;</button> 
-<nav class="navbar">
-    <ul class="navbar-menu">
-        <li><a href="#">Home</a>
+    <nav class="navbar">
+      <ul class="navbar-menu">
+        <li>
+          <a href="#">Home</a>
           <ul class="dropdown">
             <li><a href="#">Post 1</a></li>
             <li><a href="#">Post 2</a></li>
@@ -30,47 +33,46 @@
             <li><a href="#">Post 2</a></li>
             <li><a href="#">Post 1</a></li>
             <li><a href="#">Post 2</a></li>
-        </ul></li>
-        <li class="has-dropdown">
-            <a href="#">Single Posts▼</a>
-            <ul class="dropdown">
-                <li><a href="#">Post 1</a></li>
-                <li><a href="#">Post 2</a></li>
-                <li><a href="#">Post 1</a></li>
-                <li><a href="#">Post 2</a></li>
-                <li><a href="#">Post 1</a></li>
-                <li><a href="#">Post 2</a></li>
-            </ul>
+          </ul>
         </li>
         <li class="has-dropdown">
-            <a href="#">Pages ▼</a>
-            <ul class="dropdown">
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
+          <a href="#">Single Posts▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown">
+          <a href="#">Pages ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
           </ul>
         </li>
         <li><a href="#">Category</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact Me</a></li>
         <li class="has-dropdown">
-            <a href="#">Features ▼</a>
-            <ul class="dropdown">
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
-              <li><a href="#">Post 1</a></li>
-              <li><a href="#">Post 2</a></li>
+          <a href="#">Features ▼</a>
+          <ul class="dropdown">
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
+            <li><a href="#">Post 1</a></li>
+            <li><a href="#">Post 2</a></li>
           </ul>
         </li>
-    </ul>
-</nav>
-
-    
+      </ul>
+    </nav>
 
     <section class="banner">
       <img src="nyc-brooklyn-bridge.webp" alt="City Banner" />
@@ -82,62 +84,108 @@
 
     <main>
       <div class="content">
-      <div class="form-section ">
-        <form action="#" method="post" id="contact-form">
-         
-          <label for="name">Name:</label>
-          <input type="text" id="name" name="name" required />
-        
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required pattern="[^ ]+@[^ ]+\.[a-z]{2,3}" />
-        
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required minlength="6" />
-        
-          <label>Gender:</label>
-          <div class="gender">
-            <input type="radio" id="male" name="gender" value="Male" required />
-            <label for="male">Male</label>
-            
-            <input type="radio" id="female" name="gender" value="Female" required />
-            <label for="female">Female</label>
-          </div>
-        
-          <label for="city">City:</label>
-          <select id="city" name="city" required>
-            <option value="">Select a city</option>
-            <option value="city1">City 1</option>
-            <option value="city2">City 2</option>
-          </select>
-        
-          <label>Hobbies:</label>
-          <div class="hobbies">
-            <input type="checkbox" id="reading" name="hobbies[]" value="Reading" required />
-            <label for="reading">Reading</label>
-        
-            <input type="checkbox" id="writing" name="hobbies[]" value="Writing" />
-            <label for="writing">Writing</label>
-        
-            <input type="checkbox" id="music" name="hobbies[]" value="Music" />
-            <label for="music">Music</label>
-        
-            <input type="checkbox" id="sports" name="hobbies[]" value="Sports" />
-            <label for="sports">Sports</label>
-          </div>
-        
-          <label for="message">Message:</label>
-          <textarea id="message" name="message" required></textarea>
-        
-          <button type="submit" aria-label="Submit Form">Submit Form</button>
-        </form>
-      </div>
-        
-        
+        <div class="form-section">
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eos officia ut eveniet maxime delectus nobis debitis dolores? Ipsum quam labore obcaecati laborum dignissimos voluptate hic. Facere obcaecati numquam fuga quisquam sed praesentium dolorem atque quia quibusdam, aliquid eaque! Dolores, et.</p>
+          <form action="#" method="post" id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              minlength="6"
+            />
+
+            <label>Gender:</label>
+            <div class="gender">
+              <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="Male"
+                required
+              />
+              <label for="male">Male</label>
+
+              <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="Female"
+                required
+              />
+              <label for="female">Female</label>
+            </div>
+
+            <label for="city">City:</label>
+            <select id="city" name="city" required>
+              <option value="">Select a city</option>
+              <option value="city1">City 1</option>
+              <option value="city2">City 2</option>
+            </select>
+
+            <label>Hobbies:</label>
+            <div class="hobbies">
+              <input
+                type="checkbox"
+                id="reading"
+                name="hobbies[]"
+                value="Reading"
+                required
+              />
+              <label for="reading">Reading</label>
+
+              <input
+                type="checkbox"
+                id="writing"
+                name="hobbies[]"
+                value="Writing"
+              />
+              <label for="writing">Writing</label>
+
+              <input
+                type="checkbox"
+                id="music"
+                name="hobbies[]"
+                value="Music"
+              />
+              <label for="music">Music</label>
+
+              <input
+                type="checkbox"
+                id="sports"
+                name="hobbies[]"
+                value="Sports"
+              />
+              <label for="sports">Sports</label>
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button
+              type="submit"
+              aria-label="Submit Form"
+              onclick="validateForm()"
+            >
+              Submit Form
+            </button>
+          </form>
+        </div>
 
         <div class="right-sidebar">
           <div class="about-us">
             <h3>ABOUT US</h3>
-            <img src="speaker-giving-talk-on-corporate-600nw-2508411195.webp" alt="About Us" />
+            <img
+              src="speaker-giving-talk-on-corporate-600nw-2508411195.webp"
+              alt="About Us"
+            />
             <p>Aenean commodo ligula eget dolor. Aenean massa.</p>
             <p class="signature">Jenifer Carter</p>
           </div>
@@ -155,130 +203,145 @@
     </main>
 
     <footer>
-        <div class="footer-content">
-          <div class="footer-section">
-            <h3>RECENT POSTS</h3>
-            <ul>
-              <li><a href="#">BEAUTY OF NATURE</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">FASHION MODEL SHOOT</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">GOLDEN SNOW LAND</a></li>
-              <p><em>July 22, 2015</em></p>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h3>POPULAR POSTS</h3>
-            <ul>
-              <li><a href="#">TOP 10 INGREDIENTS</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">FAMILY COMES FIRST</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">GOLDEN SNOW LAND</a></li>
-              <p><em>July 22, 2015</em></p>
-            </ul>
-          </div>
-          
-          <div class="footer-section">
-            <h3>RECENT POSTS</h3>
-            <ul>
-              <li><a href="#">BEAUTY OF NATURE</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">FASHION MODEL SHOOT</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">GOLDEN SNOW LAND</a></li>
-              <p><em>July 22, 2015</em></p>
-            </ul>
-          </div>
-      
-          <div class="footer-section">
-            <h3>POPULAR POSTS</h3>
-            <ul>
-              <li><a href="#">TOP 10 INGREDIENTS</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">FAMILY COMES FIRST</a></li>
-              <p><em>July 22, 2015</em></p>
-              <li><a href="#">GOLDEN SNOW LAND</a></li>
-              <p><em>July 22, 2015</em></p>
-            </ul>
-          </div>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>RECENT POSTS</h3>
+          <ul>
+            <li><a href="#">BEAUTY OF NATURE</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">FASHION MODEL SHOOT</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">GOLDEN SNOW LAND</a></li>
+            <p><em>July 22, 2015</em></p>
+          </ul>
         </div>
-      
-        <div class="footer-bottom">
-          <p>&copy; Copyright LetsBlog Theme Demo - Theme by ThemeGoods</p>
-          <div><ul class="footer-menu">
+
+        <div class="footer-section">
+          <h3>POPULAR POSTS</h3>
+          <ul>
+            <li><a href="#">TOP 10 INGREDIENTS</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">FAMILY COMES FIRST</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">GOLDEN SNOW LAND</a></li>
+            <p><em>July 22, 2015</em></p>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>RECENT POSTS</h3>
+          <ul>
+            <li><a href="#">BEAUTY OF NATURE</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">FASHION MODEL SHOOT</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">GOLDEN SNOW LAND</a></li>
+            <p><em>July 22, 2015</em></p>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>POPULAR POSTS</h3>
+          <ul>
+            <li><a href="#">TOP 10 INGREDIENTS</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">FAMILY COMES FIRST</a></li>
+            <p><em>July 22, 2015</em></p>
+            <li><a href="#">GOLDEN SNOW LAND</a></li>
+            <p><em>July 22, 2015</em></p>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; Copyright LetsBlog Theme Demo - Theme by ThemeGoods</p>
+        <div>
+          <ul class="footer-menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Lifestyle</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact Me</a></li>
-          </ul></div>
-          
+          </ul>
         </div>
-      </footer>
+      </div>
+    </footer>
 
-
-      <div class="modal" id="popup-modal">
-        <div class="modal-content">
-            <p>Would you like to proceed with the Submit action?</p>
-            <div class="modal-buttons">
-                <button class="btn proceed-btn" id="proceed-btn">Proceed</button>
-                <button class="btn cancel-btn" id="cancel-btn">Cancel</button>
-            </div>
+    <div class="modal" id="popup-modal">
+      <div class="modal-content">
+        <p>Would you like to proceed with the Submit action?</p>
+        <div class="modal-buttons">
+          <button class="btn proceed-btn" id="proceed-btn">Proceed</button>
+          <button class="btn cancel-btn" id="cancel-btn">Cancel</button>
         </div>
+      </div>
     </div>
 
-
-
-
-
     <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger");
+        const navbarMenu = document.querySelector(".navbar-menu");
+        const dropdownItems = document.querySelectorAll(".has-dropdown");
 
-document.addEventListener("DOMContentLoaded", function() {
-  const hamburger = document.querySelector(".hamburger");
-  const navbarMenu = document.querySelector(".navbar-menu");
-  const dropdownItems = document.querySelectorAll(".has-dropdown");
+        hamburger.addEventListener("click", function () {
+          navbarMenu.classList.toggle("show");
+        });
 
-  hamburger.addEventListener("click", function() {
-    navbarMenu.classList.toggle("show"); 
-  });
+        dropdownItems.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+            item.classList.toggle("active");
+          });
+        });
+      });
 
-  dropdownItems.forEach(item => {
-    item.addEventListener("click", function(e) {
-      e.preventDefault();
-      item.classList.toggle("active"); 
-    });
-  });
-});
+      function validateForm() {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (name === "" || email === "" || password === "") {
+          alert("All fields are required.");
+          return;
+        }
+
+        if (!emailPattern.test(email)) {
+          alert("Please enter a valid email address.");
+          return;
+        }
+
+        if (password.length < 6) {
+          alert("Password must be at least 6 characters long.");
+          return;
+        }
+
+        document.getElementById("dialog").showModal();
+      }
 
       document.addEventListener("DOMContentLoaded", function () {
-    const form = document.getElementById("contact-form");
-    const modal = document.getElementById("popup-modal");
-    const proceedBtn = document.getElementById("proceed-btn");
-    const cancelBtn = document.getElementById("cancel-btn");
+        const form = document.getElementById("contact-form");
+        const modal = document.getElementById("popup-modal");
+        const proceedBtn = document.getElementById("proceed-btn");
+        const cancelBtn = document.getElementById("cancel-btn");
 
-    form.addEventListener("submit", function (event) {
-        event.preventDefault();
-        modal.style.display = "flex";
-    });
+        form.addEventListener("submit", function (event) {
+          event.preventDefault(); // Prevent actual form submission
+          modal.style.display = "flex";
+          document.body.classList.add("modal-open"); // Freeze scrolling
+        });
 
-    proceedBtn.addEventListener("click", function () {
-        modal.style.display = "none";
-        form.submit(); 
-    });
+        proceedBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+          document.body.classList.remove("modal-open"); // Restore scrolling
+          alert('Form submitted') // Submit form
+        });
 
-    cancelBtn.addEventListener("click", function () {
-        modal.style.display = "none"; 
-    });
-});
-
-
-
-
-
-
-  </script>
-    
+        cancelBtn.addEventListener("click", function () {
+          modal.style.display = "none";
+          document.body.classList.remove("modal-open");
+          alert('Form canceled') 
+        });
+      });
+    </script>
   </body>
 </html>
-

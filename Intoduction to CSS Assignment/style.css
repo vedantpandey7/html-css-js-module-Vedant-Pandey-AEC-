@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: white;;
   color: #333;
 }
 
@@ -95,8 +95,23 @@ header {
 
 @media screen and (max-width: 768px) {
   
+  header {
+    display: flex;
+    justify-content: left;
+  }
+  .logo img {
+    width: 20%;
+  }
+
   .hamburger {
     display: block;
+    
+  }
+  .navbar {
+    
+    border-top: none;
+    border-bottom: none;
+    padding: 0%;
   }
 
   .navbar-menu {
@@ -177,7 +192,7 @@ header {
   flex: 2;
   background: white;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
 }
 
 form label {
@@ -218,11 +233,16 @@ button {
   display: flex;
   flex-direction: column;
   text-align: left;
-  border: 1px solid #ddd;
   width: 30%;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: auto;
+  justify-content: space-between;
+  gap: 40px;
 }
+
+body.modal-open {
+  overflow: hidden;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -242,11 +262,9 @@ button {
   text-align: center;
   width: 50%; 
   height: 50%;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
 }
 
 .modal-buttons {
@@ -285,6 +303,8 @@ button {
 }
 
 
+
+
 @media screen and (max-width: 768px) {
   .content {
       flex-direction: column;
@@ -295,6 +315,16 @@ button {
       margin-top: 20px;
   }
 }
+
+.modal-content {
+  background: white;
+  width: 70%; 
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 
 footer {
   background: #222;
@@ -353,15 +383,17 @@ footer {
 }
 
 .about-us, .follow-me {
+  display: block;
   background: white;
   text-align: center;
-  padding: 20px;
   width: 100%;
-  margin-bottom: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  padding: 5%;
 }
 
 .about-us img {
-  width: 100%;
+  width: 90%;
   border-radius: 5px;
 }
 
